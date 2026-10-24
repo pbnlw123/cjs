@@ -1,1 +1,0 @@
-{"v": 2, "id": "cctvnews.cctv.com", "manifest": "https://litter.catbox.moe/krue22.json"}
