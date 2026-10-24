@@ -3,8 +3,9 @@
 
 入口
 ----
-CJS 链接：https://litter.catbox.moe/rgzh31.cjs?id=cctv13
-站点目录：https://litter.catbox.moe/pngrvg.json
+CJS 链接：https://litter.catbox.moe/54pjh4.cjs?id=cctv13
+站点目录：https://litter.catbox.moe/t7agfv.json
+压缩包：https://litter.catbox.moe/u929qy.zip
 
 频道（?id=）
 ------------

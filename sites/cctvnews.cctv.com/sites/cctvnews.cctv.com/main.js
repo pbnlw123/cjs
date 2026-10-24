@@ -57,7 +57,14 @@ function uuid() {
 /* CDN 按 Cookie 识别浏览器会话，带浏览器 Cookie 的请求不受会话时长限制 */
 function browserCookie() {
     var cached = cjs.getCache(COOKIE_KEY);
-    if (cached && String(cached).length > 20) return String(cached);
+    if (cached) {
+        /* 桥接 setCache 内部会 JSON.stringify(v)，取出时带引号，需还原 */
+        var s = String(cached);
+        if (s.charAt(0) === '"' && s.charAt(s.length - 1) === '"') {
+            try { s = JSON.parse(s); } catch (e) {}
+        }
+        if (s.length > 20) return s;
+    }
     var ck = 'client_id=' + randHex(32) +
         '; p_h5_u=' + uuid().toUpperCase() +
         '; selectedCC=off; _bl_uid=' + randStr(28);
@@ -136,6 +143,10 @@ function resolveChannel(raw) {
 
 function pickId(item) {
     var v = item.id || item.channel || item.ch || item.roomId || item.liveRoomNumber || '';
+    if (!v && item.params) {
+        var p = item.params;
+        v = p.id || p.channel || p.ch || p.roomId || p.liveRoomNumber || '';
+    }
     if (!v && item.url) {
         var s = String(item.url);
         var m = s.match(/[?&](?:id|roomId|liveRoomNumber)=([^&#]+)/i) ||

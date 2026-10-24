@@ -1,1 +1,1 @@
-{"v": 1, "id": "cctvnews.cctv.com", "manifest": "https://litter.catbox.moe/6ieais.json"}
+{"v": 2, "id": "cctvnews.cctv.com", "manifest": "https://litter.catbox.moe/krue22.json"}
