@@ -1,0 +1,1 @@
+{"v": 3, "id": "cctvnews.cctv.com", "manifest": "https://litter.catbox.moe/uzeuma.json"}
