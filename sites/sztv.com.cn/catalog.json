@@ -1,0 +1,28 @@
+{
+  "protocol": 5,
+  "sites": [
+    {
+      "id": "www.sztv.com.cn",
+      "module": "sztv",
+      "hosts": [
+        "www.sztv.com.cn",
+        "sztv.com.cn",
+        "sztv-live.sztv.com.cn"
+      ],
+      "engine": "hls",
+      "qualities": {
+        "high": "500"
+      },
+      "config": "https://litter.catbox.moe/9gnb0e.cjs",
+      "sources": [
+        "https://litter.catbox.moe/ay1r4u.cjs"
+      ],
+      "playback": {
+        "page": "https://www.sztv.com.cn/dianshi.shtml?id={id}",
+        "parameters": {
+          "id": ".+"
+        }
+      }
+    }
+  ]
+}

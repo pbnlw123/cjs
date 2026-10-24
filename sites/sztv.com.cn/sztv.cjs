@@ -1,0 +1,1 @@
+{"v":2,"id":"www.sztv.com.cn","manifest":"https://litter.catbox.moe/2mzl5j.json","site":{"id":"www.sztv.com.cn","module":"sztv","alias":"sztv","version":2,"hosts":["www.sztv.com.cn","sztv.com.cn","sztv-live.sztv.com.cn"],"engine":"hls","qualities":{"high":"500"},"entry":"main.js","playback":{"page":"https://www.sztv.com.cn/dianshi.shtml?id={id}","parameters":{"id":".+"}}}}
